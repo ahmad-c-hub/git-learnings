@@ -54,4 +54,8 @@ public class UserController {
     public List<UserM> getUserByJobTitle(@PathVariable("job_title") String jobTitle) {
         return userService.getUserByJobTitle(jobTitle);
     }
+    @GetMapping("/usersd")
+    public String Gibberish(){
+        return "Gibberish";
+    }
 }
