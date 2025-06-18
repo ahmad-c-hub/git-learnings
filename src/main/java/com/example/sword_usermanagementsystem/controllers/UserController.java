@@ -56,6 +56,8 @@ public class UserController {
     }
     @GetMapping("/usersd")
     public String Gibberish(){
-        return "Gibberish1";
+        int x = 5;
+        int y = 7;
+        return x - y<0 ? "OK" : "NO";
     }
 }
